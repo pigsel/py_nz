@@ -1,0 +1,493 @@
+TYPE='PLS_POLE INPUT FILE' VERSION='21.4' UNITS='INTERNAL' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+0 ; use edf suffixes
+
+
+0 0 ; write saps sum, page length
+1.225000 0.000000 1e-08 ; rho, input temp, EP1
+1 1000 20 ; analysis type, max iterations, # points on cable
+0.1000000000 1.0000000000 1000000.0000000000 3.0000000000 0.0000000000 ; max imbalance, ascorm, dasat, pwiter, min stiffness
+0 ; Joints Geometry: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+
+0 ; number truss properties
+
+0  ; number beam properties
+
+0  ; number cable properties
+
+0 ; number subs properties
+0 0 1 0 0 0.000000 132 0 0; analysis option, print rotations, echo input, gen diffs, load type to use, followed by .lca, .lic, .eia filename lines
+
+
+
+9 0 0
+0 0 1 -0.5 2 0.25 ; show ID views, use user ID ratios, use negative ratios, min ratio, max ratio, increment
+1 1 1 1 1 ; offset: arms, braces, guys, posts, strains
+1 2 0 3 ; auto add to parts list, part add action
+1000.000000000000 0.142857142857 0.000000000000 ; wind reference height, power ground elevation
+'' '' '' 0 1 1 0 0 1 1 1 0 0 0 0 0 1 0 1 1 0 0 0 131072; postproc exe name, post proc output name, post proc cmd line, post proc options, postproc name options, post proc unit system, auto save, generate analysis results, summary
+''
+''
+
+
+C:\PLS\TG_NAPD04640\structures\Single Pole\steel shape.ssl
+C:\PLS\TG_NAPD04640\structures\Single Pole\cable.cab
+0 ; Structure Cable Connectivity: label\n origin\n joint\n property 
+C:\PLS\TG_NAPD04640\structures\Single Pole\cable.cab
+0 ; Guy Connectivity: label\n origin\n joint\n property 
+C:\PLS\TG_NAPD04640\structures\Single Pole\brace.brc
+0 ; Brace Connectivity: label\n origin\n joint\n property 
+C:\PLS\TG_NAPD04640\structures\Single Pole\davit arm.dvt
+0 ; Davit Arm Connectivity: label\n origin\n joint\n property 
+C:\PLS\TG_NAPD04640\structures\Single Pole\tubular davit arm.tdv
+0 ; Tubular Davit Arm Connectivity: label\n origin\n joint\n property 
+C:\PLS\TG_NAPD04640\structures\Single Pole\xarm.xrm
+0 ; X-Arm Connectivity: label\n origin\n joint\n property 
+C:\PLS\TG_NAPD04640\structures\Single Pole\tubular xarm.xtm
+0 ; Tubular X-Arm Connectivity: label\n origin\n joint\n property 
+C:\PLS\TG_NAPD04640\structures\Single Pole\equipment.eqp
+0 ; Equipment Connectivity: label\n origin\n joint\n property 
+C:\PLS\TG_NAPD04640\structures\Single Pole\cans.can
+0 ; CAN Connectivity: label\n origin\n joint\n property 
+0 ; attach label, desc
+C:\PLS\TG_NAPD04640\structures\Single Pole\wood material.mat
+0 ; load name, attach label, dead load, tran wind area, long wind area
+0 ; appurt name, from joint, to joint, is flat, is inside, unit weight, width, perimeter
+2 ; support label, long shear, tran shear, comp, uplift, long moment, tran moment, torsional moment, resultant
+'POLE 1 :g'            0            0            0            0            0            0            0            0            0            0
+           0            0            0            0            0            0
+0            0            0 0            0 0 0            0
+'POLE 2:g'            0            0            0            0            0            0            0            0            0            0
+           0            0            0            0            0            0
+0            0            0 0            0 0 0            0
+0.076200000000 27578979.301976032555 0.152400000000 0.152400000000 0.005000000000 413684689.529640495777 0
+C:\PLS\TG_NAPD04640\structures\Single Pole\insulator.inl
+0 ; Clamp Insulator Connectivity
+0 ; Suspension Insulator Connectivity
+6 ; Strain Insulator Connectivity
+'1' 'POLE 1 :PH_B' '1' '330kV Composite longrod' 1 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'2' 'POLE 1 :PH_M' '2' '330kV Composite longrod' 1 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'3' 'POLE 1 :PH_T' '3' '330kV Composite longrod' 1 0.000000 ; label, str attach joint, tip label, property
+1.570796 ; azimuth
+'11' 'POLE 1 :PH_B' '11' '330kV Composite longrod' 1 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+'12' 'POLE 1 :PH_M' '12' '330kV Composite longrod' 1 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+'13' 'POLE 1 :PH_T' '13' '330kV Composite longrod' 1 0.000000 ; label, str attach joint, tip label, property
+4.712389 ; azimuth
+0 ; Post Insulator Connectivity
+0 ; 2-Parts Insulator Connectivity
+0 ; Guy Strain Insulator Connectivity
+6 ; insulator link: insulator label, tip label, set name, insulator type, set #, phase #, is dead end
+'1' '1' '' 1 1 1 1 ''
+'2' '2' '' 1 2 1 1 ''
+'3' '3' '' 1 3 1 1 ''
+'11' '11' '' 1 11 1 1 ''
+'12' '12' '' 1 12 1 1 ''
+'13' '13' '' 1 13 1 1 ''
+C:\PLS\TG_NAPD04640\structures\Single Pole\steel pole.spp
+1 ; Steel Pole Connectivity: label\n origin\n joint\n property 
+POLE 1 
+
+
+SP19
+4 ; Relative Attachment Labels for: joint label\nrestraint 1-6\nx,y,z\nhas master, symmetry code, relative dist\nfrom, to joint, is secondary, fraction
+'POLE 1 :EW'
+0 0 0 0 0 0
+0 0 0 0
+0 0 0.1
+'' '' 0 0 0 0
+'POLE 1 :PH_T'
+0 0 0 0 0 0
+0 0 0 0
+0 0 0.15
+'' '' 0 0 0 0
+'POLE 1 :PH_M'
+0 0 0 0 0 0
+0 0 0 0
+0 0 5.5
+'' '' 0 0 0 0
+'POLE 1 :PH_B'
+0 0 0 0 0 0
+0 0 0 0
+0 0 10.85
+'' '' 0 0 0 0
+           0            0            0            0            0
+1            0            0
+0
+C:\PLS\TG_NAPD04640\structures\Single Pole\concrete pole.cpp
+0 ; Concrete Pole Connectivity: label\n origin\n joint\n property 
+0
+C:\PLS\TG_NAPD04640\structures\Single Pole\wood pole.wpp
+0 ; Wood Pole Connectivity: label\n origin\n joint\n property 
+0
+0  ; wood pole strength check
+C:\PLS\TG_NAPD04640\structures\Single Pole\laminated wood pole.lpp
+0 ; Laminated Wood Pole Connectivity: label\n origin\n joint\n property 
+0
+C:\PLS\TG_NAPD04640\structures\Single Pole\frp pole.fpp
+0 ; FRP Pole Connectivity: label\n origin\n joint\n property 
+0
+C:\PLS\TG_NAPD04640\structures\Single Pole\mast.mas
+0 ; Mast Connectivity: label\n origin\n joint\n property 
+0 ; Vang Connectivity: label\n origin\n joint\n property 
+C:\PLS\TG_NAPD04640\structures\Single Pole\Framing.FRM
+0 ; Framing Connectivity: label\n origin\n joint\n property 
+0 ; defect desc, attach, azimuth, diameter/width, long left, tran left, defect type, radial offset
+3 1 1 1
+30 1 0 0 0 1
+15.555555555556
+TYPE='STRUCT FILE' VERSION='13' UNITS='INTERNAL' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+
+
+
+19.001750 0.000000 0.000000
+13
+'' 'S' 'N' 'N' 1 1
+126.000000 0.120000 3.675000 0.000000 0.000000 0
+2.31764406738637e-17 10.85 0.3785 '1:O' '1' '1' 0 1.571 -1000.000 1 0.000000
+'' 'S' 'N' 'N' 1 1
+126.000000 0.120000 3.675000 0.000000 0.000000 0
+2.02066721859313e-17 5.5 0.33 '2:O' '2' '2' 0 1.571 -1000.000 1 0.000000
+'' 'S' 'N' 'N' 1 1
+126.000000 0.120000 3.675000 0.000000 0.000000 0
+1.69307419982122e-17 0.149999999999999 0.2765 '3:O' '3' '3' 0 1.571 -1000.000 1 0.000000
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'N' 'N' 'N' 0 0
+'' 'S' 'N' 'N' 1 1
+126.000000 0.120000 3.675000 0.000000 0.000000 0
+-6.9529322021591e-17 10.85 -0.3785 '11:O' '11' '11' 0 4.712 -1000.000 1 0.000000
+'' 'S' 'N' 'N' 1 1
+126.000000 0.120000 3.675000 0.000000 0.000000 0
+-6.0620016557794e-17 5.5 -0.33 '12:O' '12' '12' 0 4.712 -1000.000 1 0.000000
+'' 'S' 'N' 'N' 1 1
+126.000000 0.120000 3.675000 0.000000 0.000000 0
+-5.07922259946365e-17 0.149999999999999 -0.2765 '13:O' '13' '13' 0 4.712 -1000.000 1 0.000000
+A 'C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+PLS_POLE.exe
+PLS_POLE.exe
+0 0 0 0
+
+
+1 0 1 132
+1
+'POLE 1 ' 'SP19' 19.001750 0.000000 22188.720147 'POLE 1 :g' 11 0.000000 0.000000 0.920035 '' 0.000000
+0.000000 22188.720147 0.000000 756.000000
+TYPE='PRT FILE' VERSION='4' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME=''
+0 0 13; total number of columns (including user defined columns), sort column, and number of protected columns
+0 0 0 ; number of parts, assemblies, and resolve-list items
+0 0
+0; number of custom counting units
+TYPE='PLT FILE' VERSION='4.4' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME=''
+
+37 32 1 1 0 0 20
+19 ; # shapes for each shape shape index, # points, x,y for each point
+1 2
+0.000000 0.000000 
+-1.000000 1.000000 
+2 4
+-1.000000 -1.000000 1.000000 1.000000 
+1.000000 -1.000000 -1.000000 1.000000 
+3 4
+-1.000000 -1.000000 1.000000 1.000000 
+1.000000 -1.000000 -1.000000 1.000000 
+4 6
+-0.577300 -1.154700 -0.577300 0.577300 1.154700 0.577300 
+1.000000 -0.000000 -1.000000 -1.000000 0.000000 1.000000 
+5 8
+-0.414210 -1.000000 -1.000000 -0.414210 0.414210 1.000000 1.000000 0.414210 
+1.000000 0.414210 -0.414210 -1.000000 -1.000000 -0.414210 0.414210 1.000000 
+6 12
+-0.267950 -0.732050 -1.000000 -1.000000 -0.732050 -0.267950 0.267950 0.732050 1.000000 1.000000 0.732050 0.267950 
+1.000000 0.732050 0.267950 -0.267950 -0.732050 -1.000000 -1.000000 -0.732050 -0.267950 0.267950 0.732050 1.000000 
+7 16
+-0.198900 -0.566500 -0.847700 -1.000000 -1.000000 -0.847700 -0.566500 -0.198900 0.198900 0.566500 0.847700 1.000000 1.000000 0.847700 0.566500 0.198900 
+1.000000 0.847700 0.566500 0.198900 -0.198900 -0.566500 -0.847700 -1.000000 -1.000000 -0.847700 -0.566500 -0.198900 0.198900 0.566500 0.847700 1.000000 
+8 4
+-1.414000 0.000000 1.414000 0.000000 
+-0.000000 -1.414000 0.000000 1.414000 
+9 6
+-1.000000 -1.000000 0.000000 1.000000 1.000000 0.000000 
+0.577300 -0.577300 -1.154700 -0.577300 0.577300 1.154700 
+10 8
+-0.765370 -1.082390 -0.765370 0.000000 0.765370 1.082390 0.765370 0.000000 
+0.765370 -0.000000 -0.765370 -1.082390 -0.765370 0.000000 0.765370 1.082390 
+11 12
+-0.517640 -0.896570 -1.035280 -0.896570 -0.517640 0.000000 0.517640 0.896570 1.035280 0.896570 0.517640 0.000000 
+0.896570 0.517640 -0.000000 -0.517640 -0.896570 -1.035280 -0.896570 -0.517640 0.000000 0.517640 0.896570 1.035280 
+12 16
+-0.390180 -0.720960 -0.941980 -1.019590 -0.941980 -0.720960 -0.390180 0.000000 0.390180 0.720960 0.941980 1.019590 0.941980 0.720960 0.390180 0.000000 
+0.941980 0.720960 0.390180 -0.000000 -0.390180 -0.720960 -0.941980 -1.019590 -0.941980 -0.720960 -0.390180 0.000000 0.390180 0.720960 0.941980 1.019590 
+13 12
+-0.223500 -0.654310 -1.000000 -1.000000 -0.654310 -0.223500 0.223500 0.654310 1.000000 1.000000 0.654310 0.223500 
+0.626070 0.506870 0.223500 -0.223500 -0.506870 -0.626070 -0.626070 -0.506870 -0.223500 0.223500 0.506870 0.626070 
+14 12
+-0.223500 -0.506870 -0.626070 -0.626070 -0.506870 -0.223500 0.223500 0.506870 0.626070 0.626070 0.506870 0.223500 
+1.000000 0.654310 0.223500 -0.223500 -0.654310 -1.000000 -1.000000 -0.654310 -0.223500 0.223500 0.654310 1.000000 
+15 12
+-0.229880 -0.667530 -1.000000 -1.000000 -0.667530 -0.229880 0.229880 0.667530 1.000000 1.000000 0.667530 0.229880 
+0.688330 0.547440 0.229880 -0.229880 -0.547440 -0.688330 -0.688330 -0.547440 -0.229880 0.229880 0.547440 0.688330 
+16 12
+-0.229880 -0.547450 -0.688330 -0.688330 -0.547450 -0.229880 0.229880 0.547450 0.688330 0.688330 0.547450 0.229880 
+1.000000 0.667530 0.229880 -0.229880 -0.667530 -1.000000 -1.000000 -0.667530 -0.229880 0.229880 0.667530 1.000000 
+17 12
+-0.238590 -0.684430 -1.000000 -1.000000 -0.684430 -0.238590 0.238590 0.684430 1.000000 1.000000 0.684430 0.238590 
+0.766420 0.596470 0.238570 -0.238570 -0.596470 -0.766420 -0.766420 -0.596470 -0.238570 0.238570 0.596470 0.766420 
+18 12
+-0.238570 -0.596470 -0.766420 -0.766420 -0.596470 -0.238570 0.238570 0.596470 0.766420 0.766420 0.596470 0.238570 
+1.000000 0.684430 0.238590 -0.238590 -0.684430 -1.000000 -1.000000 -0.684430 -0.238590 0.238590 0.684430 1.000000 
+19 18
+-0.342020 -0.642790 -0.866020 -0.984810 -0.984810 -0.866020 -0.642790 -0.342020 0.000000 0.342020 0.642790 0.866020 0.984810 0.984810 0.866020 0.642790 0.342020 0.000000 
+0.939690 0.766040 0.500000 0.173650 -0.173650 -0.500000 -0.766040 -0.939690 -1.000000 -0.939690 -0.766040 -0.500000 -0.173650 0.173650 0.500000 0.766040 0.939690 1.000000 
+Undeformed Geometry
+1 144 'POLE 1 :g' ''
+2 0 'POLE 1 :t' ''
+3 0 'POLE 1 :EW' ''
+4 32 'POLE 1 :PH_T' ''
+5 0 '' ''
+6 0 '' ''
+7 0 '' ''
+8 0 '' ''
+9 0 '' ''
+10 32 'POLE 1 :PH_M' ''
+11 0 '' ''
+12 0 '' ''
+13 0 '' ''
+14 0 '' ''
+15 0 '' ''
+16 0 '' ''
+17 32 'POLE 1 :PH_B' ''
+18 0 '' ''
+19 0 '' ''
+20 0 '' ''
+21 0 '' ''
+22 0 '' ''
+23 0 '' ''
+24 0 '' ''
+25 0 '' ''
+26 4 '1:O' 'POLE 1 :PH_B'
+27 4 '2:O' 'POLE 1 :PH_M'
+28 4 '3:O' 'POLE 1 :PH_T'
+29 4 '11:O' 'POLE 1 :PH_B'
+30 4 '12:O' 'POLE 1 :PH_M'
+31 4 '13:O' 'POLE 1 :PH_T'
+32 327744 '1' ''
+33 589888 '2' ''
+34 852032 '3' ''
+35 2949184 '11' ''
+36 3211328 '12' ''
+37 3473472 '13' ''
+2 3 1 184583234 'Beam' 0 0 'POLE 1 ' 6 6 0.27500001 0.27599999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+3 4 2 184583170 'Beam' 0 0 'POLE 1 ' 6 6 0.27600001 0.27649999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+4 5 3 184583170 'Beam' 0 0 'POLE 1 ' 6 6 0.27650001 0.28649999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+5 6 4 184583170 'Beam' 0 0 'POLE 1 ' 6 6 0.28650001 0.29649999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+6 7 5 184583170 'Beam' 0 0 'POLE 1 ' 6 6 0.29650001 0.30649999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+7 8 6 184583170 'Beam' 0 0 'POLE 1 ' 6 6 0.30650001 0.31649999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+8 9 7 184583170 'Beam' 0 0 'POLE 1 ' 6 6 0.31650001 0.32324999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+9 10 8 184583170 'Beam' 0 0 'POLE 1 ' 6 6 0.32325001 0.32999999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+10 11 9 184583170 'Beam' 0 0 'POLE 1 ' 6 6 0.33000001 0.33999999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+11 12 10 184583170 'Beam' 0 0 'POLE 1 ' 6 6 0.34000001 0.34999999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+12 13 11 184583170 'Beam' 0 0 'POLE 1 ' 6 6 0.35000001 0.35937499 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+13 14 12 184583298 'Beam' 0 0 'POLE 1 ' 6 6 0.35937501 0.36874999 0 16711680 0 0 0 0.005000 0.005000 'Tube 1' ''
+14 15 13 184583234 'Beam' -1 0 'POLE 1 ' 6 6 0.36875001 0.37437499 0 16711680 0 0 0 0.005000 0.005000 'Splice' ''
+15 16 14 184583298 'Beam' 1 0 'POLE 1 ' 6 6 0.37437501 0.37999999 0 16711680 0 0 0 0.005000 0.005000 'Tube 2' ''
+16 17 15 184550402 'Beam' 1 0 'POLE 1 ' 6 6 0.37500001 0.37849999 0 16711680 0 0 0 0.006000 0.006000 'Tube 2' ''
+17 18 16 184583170 'Beam' 1 0 'POLE 1 ' 6 6 0.37850001 0.38849999 0 16711680 0 0 0 0.006000 0.006000 'Tube 2' ''
+18 19 17 184583170 'Beam' 1 0 'POLE 1 ' 6 6 0.38850001 0.39849999 0 16711680 0 0 0 0.006000 0.006000 'Tube 2' ''
+19 20 18 184583170 'Beam' 1 0 'POLE 1 ' 6 6 0.39850001 0.40849999 0 16711680 0 0 0 0.006000 0.006000 'Tube 2' ''
+20 21 19 184583170 'Beam' 1 0 'POLE 1 ' 6 6 0.40850001 0.41849999 0 16711680 0 0 0 0.006000 0.006000 'Tube 2' ''
+21 22 20 184583170 'Beam' 1 0 'POLE 1 ' 6 6 0.41850001 0.42849999 0 16711680 0 0 0 0.006000 0.006000 'Tube 2' ''
+22 23 21 184583170 'Beam' 1 0 'POLE 1 ' 6 6 0.42850001 0.43849999 0 16711680 0 0 0 0.006000 0.006000 'Tube 2' ''
+23 24 22 184583170 'Beam' 1 0 'POLE 1 ' 6 6 0.43850001 0.44425874 0 16711680 0 0 0 0.006000 0.006000 'Tube 2' ''
+24 25 23 184583298 'Beam' 1 0 'POLE 1 ' 6 6 0.44425876 0.45001749 0 16711680 0 0 0 0.006000 0.006000 'Tube 2' ''
+25 1 24 184583362 'Beam' -1 0 'POLE 1 ' 6 6 0.45001751 0.46001749 0 16711680 0 0 0 0.006000 0.006000 'Splice' ''
+14 16 25 184550480 'InnerTube' -1 0 'POLE 1 ' 6 6 0.36375 0.37499999 0 16711680 0 0 0 0.006000 0.006000 '' ''
+26 32 26 436207625 'Strain' -1 0 '1' 0 0 0 0 0 16711680 1 1 1 '' ''
+27 33 27 436207625 'Strain' -1 0 '2' 0 0 0 0 0 16711680 1 1 1 '' ''
+28 34 28 436207625 'Strain' -1 0 '3' 0 0 0 0 0 16711680 1 1 1 '' ''
+29 35 29 436207625 'Strain' -1 0 '11' 0 0 0 0 0 16711680 1 1 1 '' ''
+30 36 30 436207625 'Strain' -1 0 '12' 0 0 0 0 0 16711680 1 1 1 '' ''
+31 37 31 436207625 'Strain' -1 0 '13' 0 0 0 0 0 16711680 1 1 1 '' ''
+1 1 31 0 '' -1 0 '' 0 0 0 0 0 16711680 1 1 1 '' ''
+0 0 0
+0 0 19.00175
+0 0 18.90175
+0 0 18.85175
+0 0 17.85175
+0 0 16.85175
+0 0 15.85175
+0 0 14.85175
+0 0 14.17675
+0 0 13.50175
+0 0 12.50175
+0 0 11.50175
+0 0 10.56425
+0 0 9.62675
+0 0 9.06425
+0 0 8.50175
+0 0 8.15175
+0 0 7.15175
+0 0 6.15175
+0 0 5.15175
+0 0 4.15175
+0 0 3.15175
+0 0 2.15175
+0 0 1.575875
+0 0 1
+0.3785 2.3176441e-17 8.15175
+0.33 2.0206672e-17 13.50175
+0.2765 1.6930742e-17 18.85175
+-0.3785 -6.9529322e-17 8.15175
+-0.33 -6.0620017e-17 13.50175
+-0.2765 -5.0792226e-17 18.85175
+4.0535 2.4820529e-16 8.15175
+4.005 2.4523552e-16 13.50175
+3.9515 2.4195959e-16 18.85175
+-4.0535 -7.4461587e-16 8.15175
+-4.005 -7.3570656e-16 13.50175
+-3.9515 -7.2587877e-16 18.85175
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+0 0
+TYPE='DXF ATTACHMENTS' VERSION='3' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+0 ; number dxf files attached
+TYPE='BMP ATTACHMENTS' VERSION='5' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+0 1.000000 ; number bmp files attached, minimum pixel size
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+0 ; Number annotation records
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+2 ; Number annotation records
+5 37.17140 22.64240 0.00000 0 -1 2.54 0 0 0 0 1 0 0 1 'Project\n%n\n%desc\n%notes'
+4 91.25000 95.70000 0.00000 0 -1 0.508 0 0 0 0 0 0 0 0 'Page %p of %q'
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+TYPE='Insulator Library' VERSION='11' UNITS='INTERNAL' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME=''
+CClampProperties
+0 ; label, stock #, holding cap
+CStrainProperties
+1 ; label, stock #, tension cap, length, wind area, weight, E L, E R
+'330kV Composite longrod' '' 160000.00000000 3.67500000 0.12000000 126.00000000 0.00000000 0.00000000
+'' 0 0.00000000
+CSuspensionProperties
+0 ; label, stock #, tension cap, length, wind area, weight, Top w h, Bot w h, Vert w h
+C2PartProperties
+0 ; label, stock #, left,right length, left,right wind area, left,right, weight, left,right,comp cap, left,right tens cap
+CPostProperties
+0 ; label, stock #, has brace, horz dist, vert dist, vert up cap, vert down cap, axial comp cap, axial ten cap, long cap, weight, long, vert stiff
+CGuyStrainProperties
+0 ; label, stock #, Tension cap
+TYPE='STEEL POLE PROPERTIES FILE' VERSION='10' UNITS='INTERNAL' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\steel pole.spp'
+1
+'SP19' '' '12F' '12F'            0            0         0.55         0.02          1.3            0            0 2            0            0            0 2
+3 ; # tubes
+10.500000000000 0.005000000000 0.000000000000 448158000.000000059605 0.000000000000 0.000000000000 1.500000000000
+10.000000000000 0.006000000000 0.000000000000 448158000.000000059605 0.000000000000 0.000000000000 1.500000000000
+1.000000000000 0.007000000000 0.000000000000 448158000.000000059605 0.000000000000 0.000000000000 0.000000000000
+'0' '' 0.000000 0.000000 0.000000 76972.8378024            0            0 0.000000 0.000000
+0 ; # bolts
+TYPE='STRUCTURE SHEETS' VERSION='2' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+0  86.3600 55.8800  1 0 2 0
+TYPE='INSET STRUCT VIEWS' VERSION='1' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+4 ; number of inset views
+0  55.0000 95.0000 10.0000 85.0000  0.0000 0.0000 0.0000  70.0000 120.0000  0.6000 ''
+36.5760 1 0
+Isometric
+1 0  1  36.5760 36.5760  2 5 0 0
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+0 ; Number annotation records
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+0  8.0000 38.0000 4.0000 25.0000  0.0000 0.0000 0.0000  0.0000 90.0000  0.6000 ''
+36.5760 4 0
+Plan
+1 1  1  36.5760 36.5760  2 5 0 0
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+0 ; Number annotation records
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+0  8.0000 38.0000 30.0000 85.0000  0.0000 0.0000 0.0000  90.0000 90.0000  0.6000 ''
+36.5760 4 0
+Longitudinal
+1 1  1  36.5760 36.5760  2 5 0 0
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+0 ; Number annotation records
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+0  40.0000 55.0000 30.0000 85.0000  0.0000 0.0000 0.0000  90.0000 0.0000  0.6000 ''
+36.5760 4 0
+Transverse
+1 1  1  36.5760 36.5760  2 5 0 0
+TYPE='ANNOTATION' VERSION='8' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+0 ; Number annotation records
+-1 -1 -1 -1 -1 0 -1 -1 -1 0 '' 0
+''
+''
+'' ''
+TYPE='INSET REPORT VIEWS' VERSION='1' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\PLS\TG_NAPD04640\structures\Single Pole\330kV_SC_SP_19m.POL'
+0 ; number of inset views
+0 0 0 0 0   0.3175 0 0 0 0  '' '' 'Annotation' 'Annotation'
+0 0 0 0 0   0 0 0 0 16777215  '' '' 'Inset Report Lines' 'Inset Report Lines'
+0 0 0 0 0   0 0 0 0 16777215  '' '' 'Inset Report Text' 'Inset Report Text'
+0 0 0 0 0   0.3175 0 0 0 0  '' '' 'Sheet Border' 'Sheet Border'
+0 0 0 0 0   0.8382 0 0 0 0  '' '' 'Inset View' 'Inset View'
+0 0 0 0 0   0.3175 0 0 0 0  '' '' 'Structure Inset View' 'Structure Inset View'
+TYPE='RTF FILE' VERSION='1' UNITS='SI' SOURCE='PLS-POLE Version 17.22' USER='Alliance Power & Data - Australia' FILENAME='C:\Users\joanrey.lawag.APD\Documents\Projects\N_APD04640_TG RP3 - Line 23 Refurbishment\PLS-CADD\20230203\PLS-POLE\Single Pole\330kV_SC_SP_19m.POL'
+{\rtf1\ansi\ansicpg1252\deff0\deflang3081{\fonttbl{\f0\fmodern\fprq1\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 PLS-POLE Version 17.22x64    3:34:03 PM Monday, 30 May 2022\par
+Ausgrid\par
+\par
+Insert your notes, comments, pictures, etc. here.  You can also check the\par
+"Enable Automatic Project Revision Tracking" option in the General Data dialog\par
+and the program will automatically append a list of changes made to this model\par
+to the end of this report.  This report is automatically saved whenever you save\par
+your project.\par
+\par
+}
