@@ -13,7 +13,7 @@ Structure = {} # name, str_description, str_type, str_contract, str_function, in
 ins_types = {'C': ['Clamp', 0], 'I': ['Suspension', 0], 'S': ['Strain', 0], 'P': ['Post', 0], 'T': ['2-Parts', 0]} # insulator types and their counts 
 
 workdir = Path(r'C:\_Igor_\python\py_nz\parse_str')  # working directory
-p_sttab = workdir / 'staking_table.txt'  # path to staking table
+p_sttab = workdir / 'sttable.txt'  # path to staking table
 p_str = workdir / 'test_strain.POL'  # path to structures files
 
 
@@ -41,16 +41,6 @@ def stk_read(path):
                 #print("Unexpected line format:", lines[i])
                 i += 1
     return sets
-
-
-# print(stk_read(p_str))
-# Str_id = 'T1'  # structure ID
-
-# df = pd.DataFrame(stk_read(p_str)).T  # transpose to have sets as rows
-# df.columns = ['Type', 'Weight', 'Wind Area', 'Length']  # add column names
-# df = df.reset_index().rename(columns={'index': 'Set'})  # add set names as first column
-# df.insert(0, 'Str_id', Str_id)  # insert column with same value for all rows
-# print(df)
 
 
 def towerpole_read(path):
@@ -99,4 +89,12 @@ def towerpole_read(path):
                         ins_types[ins][1] = stroke.split()[0]
         print(ins_types)
 
-towerpole_read(p_str)
+#towerpole_read(p_str)
+
+# creating dataframes for structures and for insulators
+
+# df = pd.DataFrame(stk_read(p_str)).T  # transpose to have sets as rows
+# df.columns = ['Type', 'Weight', 'Wind Area', 'Length']  # add column names
+# df = df.reset_index().rename(columns={'index': 'Set'})  # add set names as first column
+# df.insert(0, 'Str_id', Str_id)  # insert column with same value for all rows
+# print(df)
