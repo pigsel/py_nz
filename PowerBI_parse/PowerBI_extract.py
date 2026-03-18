@@ -1,5 +1,5 @@
 # this script extracts data from PowerBI reports and saves them as XLS files.
-# For TP SSR Reports
+# For TP DCD Reports
 
 
 from pathlib import Path
