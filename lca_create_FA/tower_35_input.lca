@@ -1,0 +1,130 @@
+TYPE='LCA FILE' VERSION='17' UNITS='SI' SOURCE='Tower Version 21.01' USER='Alliance Power & Data - Australia' FILENAME=''
+2 ; num_load_cases
+28 ; num_load_points
+0 1 1 1 0.142857 10 1 0.953000 1 0 1 1 0 0 1 0 0 1.600000 0 0 1 38.359000 10000.000000 3
+CM1+E NA+,T NA+
+0 ; include insulator wind/weight
+1.000000 1.000000 1.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000; Strength factors: steel, wood, ult. conc, first conc, zero conc, guy, arm, brace, insulator, foundation
+1.0000000000 ; Structure weight load factor
+100.0000000000 0.0000000000 2 ; Factored structure transverse and longitudinal wind pressures
+1.000000 0.000000 0.000000 0 0.000000 0.000000
+1
+7477.4204100000 911.7751000000 66356.5343900000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 413 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66352 N vtl=19.9,-5.7,0.0 m 1:1' ; V T and L loads including insul weight
+1
+6098.4869100000 1407.5971100000 -66076.4607500000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 397 m azi=-90.0 deg uh=2.86 uv=15.80 N/m ten=66081 N vtl=19.9,-5.7,0.0 m 1:1' ; V T and L loads including insul weight
+2
+7415.3551000000 904.3282500000 66348.1187100000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 413 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66344 N vtl=13.5,-5.2,0.0 m 2:1' ; V T and L loads including insul weight
+2
+6031.5774700000 1397.4545200000 -66070.5832900000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 397 m azi=-90.0 deg uh=2.86 uv=15.80 N/m ten=66075 N vtl=13.5,-5.2,0.0 m 2:1' ; V T and L loads including insul weight
+3
+7368.3983500000 906.4594800000 66340.7637600000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 413 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66336 N vtl=7.1,-5.0,0.0 m 3:1' ; V T and L loads including insul weight
+3
+5981.8853200000 1398.0617600000 -66065.1594900000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 397 m azi=-90.0 deg uh=2.86 uv=15.80 N/m ten=66070 N vtl=7.1,-5.0,0.0 m 3:1' ; V T and L loads including insul weight
+4
+7592.3498800000 904.5354800000 66430.3287400000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 415 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66426 N vtl=19.9,5.7,0.0 m 4:1' ; V T and L loads including insul weight
+4
+6002.2916600000 1511.4230100000 -66168.6814700000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 395 m azi=-89.9 deg uh=2.86 uv=15.80 N/m ten=66176 N vtl=19.9,5.7,0.0 m 4:1' ; V T and L loads including insul weight
+5
+7528.6571400000 913.5653000000 66420.5334000000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 415 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66416 N vtl=13.5,5.2,0.0 m 5:1' ; V T and L loads including insul weight
+5
+5937.1364400000 1519.0349300000 -66161.0786400000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 396 m azi=-89.9 deg uh=2.86 uv=15.80 N/m ten=66168 N vtl=13.5,5.2,0.0 m 5:1' ; V T and L loads including insul weight
+6
+7481.2933200000 912.6122500000 66413.8833300000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 415 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66409 N vtl=7.1,5.0,0.0 m 6:1' ; V T and L loads including insul weight
+6
+5887.7997400000 1516.4778100000 -66156.0388900000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 396 m azi=-89.9 deg uh=2.86 uv=15.80 N/m ten=66163 N vtl=7.1,5.0,0.0 m 6:1' ; V T and L loads including insul weight
+7
+816.9411600000 231.0875500000 7053.8647200000 '3-4 3-71_acsr-ac_ungreased_pre1994_tp-wir-868_l.wir 414 m azi=90.0 deg uh=1.11 uv=3.69 N/m ten=7054 N vtl=0.2,0.0,0.0 m 7:1' ; V T and L loads including insul weight
+7
+662.6508100000 226.0556100000 -7057.1017500000 '3-4 3-71_acsr-ac_ungreased_pre1994_tp-wir-868_l.wir 396 m azi=-90.0 deg uh=1.11 uv=3.69 N/m ten=7057 N vtl=0.2,0.0,0.0 m 7:1' ; V T and L loads including insul weight
+21
+0.0000000000 0.0000000000 0.0000000000 '21:1' ; V T and L loads including insul weight
+21
+0.0000000000 0.0000000000 0.0000000000 '21:1' ; V T and L loads including insul weight
+22
+0.0000000000 0.0000000000 0.0000000000 '22:1' ; V T and L loads including insul weight
+22
+0.0000000000 0.0000000000 0.0000000000 '22:1' ; V T and L loads including insul weight
+23
+0.0000000000 0.0000000000 0.0000000000 '23:1' ; V T and L loads including insul weight
+23
+0.0000000000 0.0000000000 0.0000000000 '23:1' ; V T and L loads including insul weight
+24
+0.0000000000 0.0000000000 0.0000000000 '24:1' ; V T and L loads including insul weight
+24
+0.0000000000 0.0000000000 0.0000000000 '24:1' ; V T and L loads including insul weight
+25
+0.0000000000 0.0000000000 0.0000000000 '25:1' ; V T and L loads including insul weight
+25
+0.0000000000 0.0000000000 0.0000000000 '25:1' ; V T and L loads including insul weight
+26
+0.0000000000 0.0000000000 0.0000000000 '26:1' ; V T and L loads including insul weight
+26
+0.0000000000 0.0000000000 0.0000000000 '26:1' ; V T and L loads including insul weight
+27
+0.0000000000 0.0000000000 0.0000000000 '27:1' ; V T and L loads including insul weight
+27
+0.0000000000 0.0000000000 0.0000000000 '27:1' ; V T and L loads including insul weight
+0
+CM1+E NA-,T NA-
+0 ; include insulator wind/weight
+1.000000 1.000000 1.000000 0.000000 0.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000 1.000000; Strength factors: steel, wood, ult. conc, first conc, zero conc, guy, arm, brace, insulator, foundation
+1.0000000000 ; Structure weight load factor
+-100.0000000000 0.0000000000 2 ; Factored structure transverse and longitudinal wind pressures
+1.000000 0.000000 0.000000 0 0.000000 0.000000
+1
+7432.2506100000 -1387.3089600000 66579.7492500000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 413 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66583 N vtl=19.9,-5.7,0.0 m 1:1' ; V T and L loads including insul weight
+1
+6134.0798000000 -779.6711700000 -66640.7652800000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 397 m azi=-90.0 deg uh=2.86 uv=15.80 N/m ten=66635 N vtl=19.9,-5.7,0.0 m 1:1' ; V T and L loads including insul weight
+2
+7370.2029600000 -1394.1198200000 66570.5932000000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 413 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66574 N vtl=13.5,-5.2,0.0 m 2:1' ; V T and L loads including insul weight
+2
+6066.7779800000 -788.3383500000 -66631.4162100000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 397 m azi=-90.0 deg uh=2.86 uv=15.80 N/m ten=66626 N vtl=13.5,-5.2,0.0 m 2:1' ; V T and L loads including insul weight
+3
+7323.1377300000 -1391.2794000000 66564.4680500000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 413 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66568 N vtl=7.1,-5.0,0.0 m 3:1' ; V T and L loads including insul weight
+3
+6016.6253100000 -786.6869400000 -66624.7844400000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 397 m azi=-90.0 deg uh=2.86 uv=15.80 N/m ten=66620 N vtl=7.1,-5.0,0.0 m 3:1' ; V T and L loads including insul weight
+4
+7545.8960500000 -1402.7137200000 66592.9531900000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 415 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66597 N vtl=19.9,5.7,0.0 m 4:1' ; V T and L loads including insul weight
+4
+6037.6132500000 -666.7321000000 -66664.3936000000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 395 m azi=-89.9 deg uh=2.86 uv=15.80 N/m ten=66658 N vtl=19.9,5.7,0.0 m 4:1' ; V T and L loads including insul weight
+5
+7481.9869700000 -1392.2432400000 66586.3741800000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 415 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66590 N vtl=13.5,5.2,0.0 m 5:1' ; V T and L loads including insul weight
+5
+5971.7633400000 -658.1650700000 -66656.6019700000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 396 m azi=-89.9 deg uh=2.86 uv=15.80 N/m ten=66650 N vtl=13.5,5.2,0.0 m 5:1' ; V T and L loads including insul weight
+6
+7434.5803900000 -1392.3032600000 66580.3193900000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 415 m azi=89.9 deg uh=2.86 uv=15.80 N/m ten=66584 N vtl=7.1,5.0,0.0 m 6:1' ; V T and L loads including insul weight
+6
+5922.0749000000 -659.9047900000 -66649.9438100000 'zebra_acsr_ac_greased_tp-wir-553B_l.wir 396 m azi=-89.9 deg uh=2.86 uv=15.80 N/m ten=66643 N vtl=7.1,5.0,0.0 m 6:1' ; V T and L loads including insul weight
+7
+816.3160700000 -228.7907900000 7055.8786800000 '3-4 3-71_acsr-ac_ungreased_pre1994_tp-wir-868_l.wir 414 m azi=90.0 deg uh=1.11 uv=3.69 N/m ten=7056 N vtl=0.2,0.0,0.0 m 7:1' ; V T and L loads including insul weight
+7
+663.0798500000 -213.5247400000 -7074.8356400000 '3-4 3-71_acsr-ac_ungreased_pre1994_tp-wir-868_l.wir 396 m azi=-90.0 deg uh=1.11 uv=3.69 N/m ten=7075 N vtl=0.2,0.0,0.0 m 7:1' ; V T and L loads including insul weight
+21
+0.0000000000 0.0000000000 0.0000000000 '21:1' ; V T and L loads including insul weight
+21
+0.0000000000 0.0000000000 0.0000000000 '21:1' ; V T and L loads including insul weight
+22
+0.0000000000 0.0000000000 0.0000000000 '22:1' ; V T and L loads including insul weight
+22
+0.0000000000 0.0000000000 0.0000000000 '22:1' ; V T and L loads including insul weight
+23
+0.0000000000 0.0000000000 0.0000000000 '23:1' ; V T and L loads including insul weight
+23
+0.0000000000 0.0000000000 0.0000000000 '23:1' ; V T and L loads including insul weight
+24
+0.0000000000 0.0000000000 0.0000000000 '24:1' ; V T and L loads including insul weight
+24
+0.0000000000 0.0000000000 0.0000000000 '24:1' ; V T and L loads including insul weight
+25
+0.0000000000 0.0000000000 0.0000000000 '25:1' ; V T and L loads including insul weight
+25
+0.0000000000 0.0000000000 0.0000000000 '25:1' ; V T and L loads including insul weight
+26
+0.0000000000 0.0000000000 0.0000000000 '26:1' ; V T and L loads including insul weight
+26
+0.0000000000 0.0000000000 0.0000000000 '26:1' ; V T and L loads including insul weight
+27
+0.0000000000 0.0000000000 0.0000000000 '27:1' ; V T and L loads including insul weight
+27
+0.0000000000 0.0000000000 0.0000000000 '27:1' ; V T and L loads including insul weight
+0
